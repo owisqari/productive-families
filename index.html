@@ -1,47 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productive Families</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Brando:wght@400;700&display=swap"
     />
   </head>
   <body>
     <!-- nav bar  -->
-    <nav></nav>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="navbar-brand"
+            src="https://nppf.sdb.gov.sa/SDB/images/hayahlogo.png"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown1"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                تعرف علينا
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="#">عن المنصة</a></li>
+                <li><a class="dropdown-item" href="#">شركاء البنك</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">الاستراتيجية والانظمة</a>
+                </li>
+                <li><a class="dropdown-item" href="#">تواصل معنا</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الاسر المنتجة
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <a class="dropdown-item" href="#">التمويل الغير مباشر</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >الاشتراك بمنتج زود الادخاري</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown3"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الشركاء والوسطاء
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li>
+                  <a class="dropdown-item" href="#">طلب اعتماد وسطاء التمويل</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">طلب اعتماد شركاء الدعم</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown4"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الخدمات الالكترونية
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >أصدر شهادة تسجيل أسرة منتجة</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">اطلب تسجيل منتجاتك</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">اطلب تدريب أو استشارة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >استفد من منافذ البيع المعتمدة</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >منافذ البيع للأسر المنتجة</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown5"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                المركز الاعلامي
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <a class="dropdown-item" href="#">الأخبار</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">قصص النجاح </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> الفعاليات </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- end nav bar  -->
     <!-- ad section  -->
-    <section></section>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="img-fluid"
+              style="min-height: 50vh; width: 100%"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="img-fluid"
+              style="min-height: 50vh; width: 100%"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="img-fluid"
+              style="min-height: 50vh; width: 100%"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
     <!-- end ad section  -->
     <!-- product section  -->
-    <section></section>
+    <section class="product-section">
+      <div class="container">
+        <h2 class="product-title">منتجاتنا</h2>
+        <p class="product-description">تعرف على منتجاتنا الرائعة</p>
+      </div>
+      <div class="container">
+        <div class="cardContainer">
+          <div class="product-card">
+            <img
+              src="https://www.sdb.gov.sa/getattachment/c100f50f-f7cc-4cb1-b77e-c3dbf3acba3e/Image.aspx"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="product-card-body">
+              <h5 class="card-title">الأسر المنتجة</h5>
+              <p class="card-text">أحد منتجات تمويل الأسر المنتجة</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://www.sdb.gov.sa/getattachment/c100f50f-f7cc-4cb1-b77e-c3dbf3acba3e/Image.aspx"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="product-card-body">
+              <h5 class="card-title">الأسر المنتجة</h5>
+              <p class="card-text">أحد منتجات تمويل الأسر المنتجة</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://www.sdb.gov.sa/getattachment/c100f50f-f7cc-4cb1-b77e-c3dbf3acba3e/Image.aspx"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="product-card-body">
+              <h5 class="card-title">الأسر المنتجة</h5>
+              <p class="card-text">أحد منتجات تمويل الأسر المنتجة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- end product section  -->
-    <!-- services section -->
-    <section></section>
-    <!-- end services section -->
-    <!-- statistics and numbers section -->
-    <section></section>
-    <!-- end statistics and numbers section -->
+
     <!-- success stories section -->
-    <section></section>
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>قصة نجاح</h5>
+              <p>قصة نجاح اسرة منتجة</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>قصة نجاح</h5>
+              <p>قصة نجاح اسرة منتجة</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/1400x500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>قصة نجاح</h5>
+              <p>قصة نجاح اسرة منتجة</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
     <!-- end success stories section -->
-    <!-- footer section -->
-    <footer></footer>
-    <!-- end footer section -->
+    <section class="locations-section">
+      <div class="container">
+        <h2 class="section-title text-center" style="font-size: 3rem">
+          وسطاء التمويل
+        </h2>
+        <p
+          class="section-description text-center mb-5"
+          style="font-size: 1.5rem"
+        >
+          استكشف مواقعنا المتعددة :
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="mb-3">جمعية ام القرى الخيرية</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.7410852050975!2d39.78955102348717!3d21.439419580314595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b655cc5b59d%3A0xfca26fc6c354406e!2z2KzZhdi52YrYqSDYo9mFINin2YTZgtix2Ykg2KfZhNmG2LPYp9im2YrYqSDYp9mE2K7Zitix2YrYqQ!5e0!3m2!1sar!2ssa!4v1709014535688!5m2!1sar!2ssa"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="mb-3">جمعية جود</h3>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.3602263414914!2d50.077302423379784!3d26.411849476949357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fcee9bdbe783%3A0xa95fe6c2386ff3dd!2z2KzZhdi52YrYqSDYrNmI2K8g2KfZhNmG2LPYp9im2YrYqSDYp9mE2K7Zitix2YrYqSDYqNin2YTYr9mF2KfZhQ!5e0!3m2!1sar!2ssa!4v1709014189127!5m2!1sar!2ssa"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <h3 class="mb-3">مركز جنى</h3>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.3156734748245!2d50.09957642337975!3d26.413287776948476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fca76f455a45%3A0x7c67dfb53c131a73!2z2YXYsdmD2LIg2KjZhtin2KEg2KfZhNij2LPYsSDYp9mE2YXZhtiq2KzZhyAi2KzZhtmJIg!5e0!3m2!1sar!2ssa!4v1709014411967!5m2!1sar!2ssa"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <h3 class="mb-3">لجنة التنمية الاجتماعية الأهلية</h3>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.583237450129!2d46.72871772347006!3d22.293771679691226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e225312f6e44a61%3A0x44228c8c9180ed52!2z2KzZhdi52YrYqSDYp9mE2KrZhtmF2YrYqSDYp9mE2KPZh9mE2YrYqSDYqNin2YTYo9mB2YTYp9is!5e0!3m2!1sar!2ssa!4v1709014856632!5m2!1sar!2ssa"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>
